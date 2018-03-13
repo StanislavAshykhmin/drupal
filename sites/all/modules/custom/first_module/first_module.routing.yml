@@ -1,0 +1,21 @@
+first_module.content:
+  path: '/first'
+  defaults:
+    _controller: 'Drupal\first_module\Controller\FirstController::content'
+    _title: 'Hello world'
+  requirements:
+    _permission: 'access content'
+first_module.getSettingsPage:
+  path: '/second'
+  defaults:
+    _controller: 'Drupal\first_module\Controller\ApiSettingsController::getSettingsPage'
+    _title: 'Api'
+  requirements:
+    _permission: 'access content'
+first_module.form:
+  path: '/form'
+  defaults:
+    _form:  '\Drupal\first_module\Form\Form'
+    _title: 'Форма приветствия'
+  requirements:
+    _permission: 'access content'
